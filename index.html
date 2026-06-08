@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE - Luxury Candles & Home Fragrance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+</head>
+<body>
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    Free Shipping on Orders Over <span>$75</span> — Use Code: <span>GLOW</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">LUMI<span>È</span>RE</a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html?category=candles">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="toggleCart()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span class="cart-count hidden">0</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">✦ New Collection</span>
+      <h1>The Everyday <span>Collection</span></h1>
+      <p>Handcrafted luxury candles made with 100% natural soy wax and premium fragrance oils. Transform your space with scents that inspire.</p>
+      <div class="hero-buttons">
+        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        <a href="about.html" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Luxury candle collection">
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section container">
+    <div class="section-header">
+      <div class="section-label">Explore</div>
+      <h2>Shop by Category</h2>
+      <p>Discover our curated collections of luxury home fragrances</p>
+    </div>
+    <div class="categories-grid">
+      <a href="shop.html?category=candles" class="category-card">
+        <img src="images/category-candles.jpg" alt="Candles">
+        <div class="category-overlay">
+          <h3>Candles</h3>
+          <p>12+ handcrafted scents</p>
+        </div>
+      </a>
+      <a href="shop.html?category=diffusers" class="category-card">
+        <img src="images/category-diffusers.jpg" alt="Diffusers">
+        <div class="category-overlay">
+          <h3>Diffusers</h3>
+          <p>Long-lasting fragrance</p>
+        </div>
+      </a>
+      <a href="shop.html?category=accessories" class="category-card">
+        <img src="images/category-accessories.jpg" alt="Accessories">
+        <div class="category-overlay">
+          <h3>Accessories</h3>
+          <p>Essential candle care</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="section" style="background: var(--color-bg-alt);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Best Sellers</div>
+        <h2>Most Loved Products</h2>
+        <p>Our customers' favorite picks, chosen for exceptional quality and scent</p>
+      </div>
+      <div class="products-grid" id="bestsellers"></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section container">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🤲</div>
+        <h3>Handcrafted</h3>
+        <p>Every candle is carefully hand-poured in small batches to ensure the highest quality and attention to detail.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3>Eco-Friendly</h3>
+        <p>Made with 100% natural soy wax, lead-free cotton wicks, and sustainable packaging materials.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">↩️</div>
+        <h3>Free Returns</h3>
+        <p>Not satisfied? Return any unused product within 30 days for a full refund. No questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div class="about-preview-image">
+        <img src="images/about.jpg" alt="Our Story">
+      </div>
+      <div class="about-preview-content">
+        <div class="section-label">Our Story</div>
+        <h2>Crafted with Passion Since 2018</h2>
+        <p>Lumière was born from a simple belief: everyone deserves to experience the transformative power of luxury fragrance in their everyday life. What started as a small workshop has grown into a beloved brand, but our commitment to quality remains unchanged.</p>
+        <a href="about.html" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join the Lumière Family</h2>
+      <p>Subscribe for exclusive offers, new scent launches, and 10% off your first order.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">LUMI<span>È</span>RE</a>
+          <p>Luxury candles and home fragrances, handcrafted with love. Transform your space with scents that inspire and delight.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=candles">Candles</a></li>
+            <li><a href="shop.html?category=diffusers">Diffusers</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+            <li><a href="shop.html">All Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Lumière. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" onclick="toggleCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+      <div class="cart-total"><span>Total</span><span id="cart-total">$0.00</span></div>
+      <button class="checkout-btn" onclick="showToast('Checkout coming soon!', 'success')">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Render best sellers on homepage
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('bestsellers');
+      if (grid) {
+        const featured = PRODUCTS.filter(p => p.featured).slice(0, 4);
+        grid.innerHTML = featured.map(p => renderProductCard(p)).join('');
+      }
+    });
+  </script>
+</body>
+</html>
