@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - LUMIÈRE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+</head>
+<body>
+  <!-- Promo Banner -->
+  <div class="promo-banner">
+    Free Shipping on Orders Over <span>$75</span> — Use Code: <span>GLOW</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">LUMI<span>È</span>RE</a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html?category=candles">Collections</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="toggleCart()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span class="cart-count hidden">0</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="section-label">Our Story</div>
+      <h1>About Lumière</h1>
+      <p>Lighting up homes with handcrafted luxury since 2018. We believe every moment deserves a beautiful scent.</p>
+    </div>
+  </section>
+
+  <!-- Brand Story -->
+  <section class="container">
+    <div class="about-story">
+      <div class="about-story-image">
+        <img src="images/about.jpg" alt="Our workshop">
+      </div>
+      <div>
+        <h2>From a Small Workshop to Your Home</h2>
+        <p>Lumière was founded in 2018 by Isabelle Martin in a small workshop in Brooklyn, New York. What began as a passion project — creating the perfect candle for her own home — quickly grew into something much bigger.</p>
+        <p>Frustrated by mass-produced candles that burned unevenly and used synthetic fragrances, Isabelle set out to create something different. She spent months perfecting her craft, sourcing the finest natural ingredients, and developing unique scent combinations that tell a story.</p>
+        <p>Today, every Lumière candle is still hand-poured in small batches, using the same artisanal techniques and commitment to quality that Isabelle started with. We've grown, but our heart remains the same.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="section" style="background: var(--color-bg-alt);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">How We Work</div>
+        <h2>Our Process</h2>
+        <p>Every candle goes through a meticulous process from concept to your home</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <h3>Sourcing</h3>
+          <p>We source the finest natural soy wax, premium fragrance oils, and sustainable materials from trusted suppliers worldwide.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <h3>Blending</h3>
+          <p>Our master perfumers create unique scent profiles, blending up to 12 different fragrance notes to achieve the perfect aroma.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <h3>Pouring</h3>
+          <p>Each candle is hand-poured in small batches at the optimal temperature to ensure even burning and maximum scent throw.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-number">04</div>
+          <h3>Curing</h3>
+          <p>Candles cure for a minimum of 2 weeks, allowing the wax and fragrance to fully bind for a superior scent experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability -->
+  <section class="sustainability">
+    <div class="container">
+      <h2>Our Commitment to Sustainability</h2>
+      <p>We believe luxury and sustainability go hand in hand. Every decision we make considers its impact on the planet.</p>
+      <div class="sustainability-features">
+        <div class="sust-card">
+          <div class="sust-icon">🌱</div>
+          <h3>Natural Materials</h3>
+          <p>100% natural soy wax, lead-free cotton wicks, and plant-based fragrance oils in every product.</p>
+        </div>
+        <div class="sust-card">
+          <div class="sust-icon">♻️</div>
+          <h3>Eco Packaging</h3>
+          <p>All packaging is recyclable, biodegradable, and made from post-consumer recycled materials.</p>
+        </div>
+        <div class="sust-card">
+          <div class="sust-icon">🌍</div>
+          <h3>Carbon Neutral</h3>
+          <p>We offset 100% of our carbon emissions through verified reforestation and clean energy projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section container">
+    <div class="section-header">
+      <div class="section-label">Meet the Team</div>
+      <h2>The People Behind Lumière</h2>
+      <p>Passionate individuals dedicated to creating the perfect home fragrance experience</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👩‍💼</div>
+        <h3>Isabelle Martin</h3>
+        <p class="team-role">Founder & Creative Director</p>
+        <p>Isabelle's passion for fragrance and design drives everything we create. She personally oversees every new scent development.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👨‍🔬</div>
+        <h3>James Chen</h3>
+        <p class="team-role">Head of Production</p>
+        <p>With 15 years of candle-making expertise, James ensures every product meets our exacting quality standards.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍🎨</div>
+        <h3>Sofia Alvarez</h3>
+        <p class="team-role">Lead Perfumer</p>
+        <p>Sofia's background in aromatherapy and fine perfumery brings an unmatched depth of knowledge to our scent creations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Experience Lumière</h2>
+      <p>Ready to transform your space? Discover our handcrafted collections.</p>
+      <div style="display:flex;gap:16px;justify-content:center;">
+        <a href="shop.html" class="btn btn-secondary">Shop Now</a>
+        <a href="contact.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">LUMI<span>È</span>RE</a>
+          <p>Luxury candles and home fragrances, handcrafted with love.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html?category=candles">Candles</a></li>
+            <li><a href="shop.html?category=diffusers">Diffusers</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Lumière. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" onclick="toggleCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+      <div class="cart-total"><span>Total</span><span id="cart-total">$0.00</span></div>
+      <button class="checkout-btn" onclick="showToast('Checkout coming soon!', 'success')">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
